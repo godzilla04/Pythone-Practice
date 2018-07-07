@@ -52,11 +52,44 @@
 
 
 
+# 조건문 / 반복문
+#조건 if / else
+# 파이썬의 중요한 특성:파이썬은 들여쓰기(Indentation)로 구문을 구별한다.
+
+# a = int(input('숫자 : '))
+# if a>100:
+#     print('100보다 크다')
+# else:
+#     print('100보다 적다')
 
 
+#>, < , >=, <=, == , !=
+
+print('------------------')
+print('------계산기------')
+print('------------------')
+
+number1 = int(input('숫자를 하나 입력해주세요 : '))
+number2 = int(input('숫자를 하나 더 입력해주세요 : '))
+
+print('뭘 할까요? \n1. 더하기\n2, 빼기\n3, 곱하기\n4, 나누기')
+
+code = int(input('뭘할지 숫자로 입력해주세요. :  '))
 
 
+if code == 1:
+    print('정담은 {}입니다.' .format(number1 + number2))
 
 
+elif code == 2:
+    print('정담은 {}입니다.' .format(number1 - number2))
 
+elif code == 3:
+    print('정담은 {}입니다.' .format(number1 * number2))
+
+elif code == 4:
+    print('정담은 {}입니다.' .format(number1 / number2))
+
+else:
+    print('잘못 입력했습니다')
 
